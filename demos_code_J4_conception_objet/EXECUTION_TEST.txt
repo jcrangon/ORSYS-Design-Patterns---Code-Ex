@@ -1,0 +1,66 @@
+\n===== 01_factory_et_strategy =====
+=== Factory choisit, Strategy exécute ===
+EMAIL -> Commande #42 confirmée
+SMS   -> Commande #42 confirmée
+PUSH  -> Commande #42 confirmée
+
+À commenter : NotificationService ne connaît aucune classe concrète.
+\n===== 02_builder_invariants =====
+=== Construction valide ===
+Order{customer='Alice', items=[Item[name=Livre, qty=2]], coupon=WELCOME}
+
+=== Construction invalide ===
+Refus attendu : au moins un article
+\n===== 03_adapter_api_externe =====
+[Stripe SDK] charge 4900 cents
+Receipt domaine = Receipt[id=ch_123]
+À commenter : Checkout ne dépend d'aucun type Stripe.
+\n===== 04_decorator_proxy_facade =====
+[LOG] demande A42
+[REAL] chargement coûteux
+1) Rapport-A42
+[LOG] demande A42
+2) Rapport-A42
+
+À commenter : Decorator=journaliser, Proxy=cacher, Facade=simplifier l'orchestration.
+\n===== 05_strategy_et_state =====
+=== Strategy : choix externe ===
+standard 100 -> 100
+VIP      100 -> 80
+
+=== State : transition interne ===
+state=DRAFT, canShip=false
+state=PAID, canShip=true
+state=SHIPPED, canShip=false
+\n===== 06_observer_evenements =====
+Commande 42 confirmée
+[EMAIL] 42
+[ANALYTICS] 42
+[ERREUR LISTENER] facturation indisponible
+À commenter : OrderService ignore combien de réactions existent.
+\n===== 07_command_et_chain =====
+=== Requête valide ===
+auth OK
+quota OK
+CAPTURE 250€ pour alice
+
+=== Requête refusée ===
+auth OK
+STOP : quota dépassé
+\n===== 08_composite_et_visitor =====
+folder root
+file a.txt size=10
+folder images
+file x.png size=90
+Total=100
+À commenter : ajouter une opération Visitor n'oblige pas à modifier FileNode/Folder.
+\n===== 09_checkout_refactoring_final =====
+[AUDIT] paiement demandé=80
+[AUDIT] reçu=stripe-001
+[EMAIL] paiement confirmé
+[PASS] VIP applique 20% de remise
+[PASS] un événement déclenche une notification
+
+Extension à demander au groupe : ajouter ApplePay sans modifier CheckoutService.
+
+STDERR:

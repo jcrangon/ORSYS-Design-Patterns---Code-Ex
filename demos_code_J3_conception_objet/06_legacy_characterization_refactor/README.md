@@ -1,17 +1,7 @@
-# Démo 06 — Legacy, caractérisation et refactoring
+# Démo 06 — characterization tests et refactoring legacy
 
-**Slides associées :** 33 à 35
+Commande : `mvn test`
 
-## Objectif pédagogique
-Capturer d’abord ce que fait le code legacy, puis modifier sa structure sous filet de sécurité.
+On capture d'abord le comportement actuel du legacy avec des tests JUnit paramétrés. Ensuite on refactore et on exige exactement les mêmes sorties.
 
-## Fichiers à ouvrir
-`LegacyDemo.java`
-
-## Exécution
-```bash
-./run.sh
-```
-
-## À faire verbaliser
-Insister sur la limite : une characterization test ne dit pas que le comportement est correct, seulement qu’il existe et qu’on veut le préserver pendant le refactoring.
+Important : « comportement préservé » ne signifie pas « comportement métier correct ».

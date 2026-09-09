@@ -1,17 +1,7 @@
-# Démo 03 — Stub, Fake, Spy, Mock
+# Démo 03 — Stub, Fake, Spy, Mock avec de vrais tests JUnit
 
-**Slides associées :** 22 à 24
+Commande : `mvn test`
 
-## Objectif pédagogique
-Donner une définition opérationnelle des quatre doubles et montrer qu’un “mock” n’est pas le nom générique de tout double.
+La classe de test contient quatre doubles manuels simples. Les vérifications sont faites avec les assertions JUnit (`assertEquals`, `assertTrue`).
 
-## Fichiers à ouvrir
-`DoublesDemo.java`
-
-## Exécution
-```bash
-./run.sh
-```
-
-## À faire verbaliser
-Le stub répond. Le fake travaille avec une implémentation simplifiée. Le spy enregistre. Le mock porte une attente. Demander lequel est le moins contraignant pour chaque besoin.
+Message pédagogique : un double est un rôle. Tout n'est pas un « mock ».

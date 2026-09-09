@@ -1,17 +1,6 @@
-# Démo 05 — Tester l’état ou l’interaction
+# Démo 05 — test d'état vs test d'interaction
 
-**Slides associées :** 29 à 30
+Commande : `mvn test`
 
-## Objectif pédagogique
-Faire distinguer résultat observable et collaboration externe significative.
-
-## Fichiers à ouvrir
-`StateVsInteraction.java`
-
-## Exécution
-```bash
-./run.sh
-```
-
-## À faire verbaliser
-Demander : si je réécris l’algorithme de Checkout sans modifier le statut ni l’envoi du mail, le test doit-il casser ? Non. C’est le critère d’une assertion robuste.
+- test d'état : vérifie `Receipt.status()` ;
+- test d'interaction : vérifie l'effet externe significatif, ici l'envoi de confirmation.

@@ -1,17 +1,12 @@
-# Démo 08 — TP fil rouge Checkout piloté par tests
+# Démo 08 — suite JUnit finale Checkout
 
-**Slides associées :** 41 à 47
+Commande : `mvn test`
 
-## Objectif pédagogique
-Faire apparaître les responsabilités et ports à partir d’une test list proche de celle de la slide 42.
+La suite utilise réellement :
+- `@BeforeEach`
+- `@Test`
+- `assertEquals`
+- `assertTrue`
+- `assertFalse`
 
-## Fichiers à ouvrir
-`CheckoutTddDemo.java`, `run_ci.sh`, `run_ci.bat`
-
-## Exécution
-```bash
-./run_ci.sh
-```
-
-## À faire verbaliser
-Relier chaque test à un choix de conception : PaymentPort pour contrôler le paiement, fake repository pour la persistance, spy notifier pour l’effet externe, DiscountPolicy pour la variation métier. Le script final joue le rôle d’un mini pipeline CI.
+Les cinq comportements du fil rouge sont maintenant de vrais tests JUnit indépendants.

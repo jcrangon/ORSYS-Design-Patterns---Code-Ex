@@ -1,17 +1,8 @@
-# Démo 07 — Mini chaîne MDE
+# Démo 07 — mini MDE réellement testé avec JUnit
 
-**Slides associées :** 37 à 39
+Commande : `mvn test`
 
-## Objectif pédagogique
-Rendre concret le triptyque modèle → transformation → artefact, tout en montrant que l’artefact généré doit encore être validé.
-
-## Fichiers à ouvrir
-`model.txt`, `MiniMdeGenerator.java`, `GeneratedArtifactTest.java`
-
-## Exécution
-```bash
-./run.sh
-```
-
-## À faire verbaliser
-Modifier un champ du modèle, relancer la génération, puis montrer que l’artefact suit. Faire verbaliser la notion de source de vérité et le fait que les tests ne disparaissent pas avec MDE.
+JUnit vérifie :
+1. le contenu du fichier Java généré ;
+2. que le fichier généré compile réellement avec le compilateur du JDK ;
+3. qu'un modèle invalide est refusé.

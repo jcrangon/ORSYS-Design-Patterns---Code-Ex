@@ -1,17 +1,24 @@
-# Démo 01 — Red, Green, Refactor
+# Démo 01 — vrai RED / GREEN / REFACTOR avec JUnit
 
-**Slides associées :** 13 à 16
-
-## Objectif pédagogique
-Montrer que TDD est une boucle de conception : un comportement échoue, on écrit le minimum, puis on améliore la structure sans modifier le contrat.
-
-## Fichiers à ouvrir
-`RedPhase.java`, `GreenPhase.java`, `RefactorPhase.java`
-
-## Exécution
+## 1. RED
 ```bash
-./run.sh
+cd red
+mvn test
 ```
+Le test `premiumCustomerGetsFifteenPercentDiscount()` est un **vrai test JUnit** et doit échouer : attendu 170, obtenu 200.
 
-## À faire verbaliser
-Dans Red, l’échec est attendu. Dans Green, on accepte une condition simple. Dans Refactor, on introduit une politique uniquement parce que plusieurs comportements rendent cette abstraction utile.
+## 2. GREEN
+```bash
+cd ../green
+mvn test
+```
+On ajoute uniquement le code nécessaire pour obtenir 170 pour un client premium.
+
+## 3. REFACTOR
+```bash
+cd ../refactor
+mvn test
+```
+Les tests restent verts pendant que la logique de remise devient une `DiscountPolicy`.
+
+À dire : RED prouve que le comportement manque ; GREEN prouve qu'il existe ; REFACTOR améliore la structure sans changer le comportement.

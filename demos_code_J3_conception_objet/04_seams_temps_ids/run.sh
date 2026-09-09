@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 set -e
-javac -encoding UTF-8 SeamsDemo.java
-java SeamsDemo
+mvn test

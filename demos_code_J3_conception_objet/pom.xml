@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.formation</groupId>
+  <artifactId>demos-j3-junit</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>5.14.2</junit.version>
+  </properties>
+
+  <!-- La phase RED n'est volontairement PAS dans les modules globaux : elle doit échouer. -->
+  <modules>
+    <module>01_tdd_red_green_refactor/green</module>
+    <module>01_tdd_red_green_refactor/refactor</module>
+    <module>02_limites_et_parametres</module>
+    <module>03_doubles_stub_fake_spy_mock</module>
+    <module>04_seams_temps_ids</module>
+    <module>05_etat_vs_interaction</module>
+    <module>06_legacy_characterization_refactor</module>
+    <module>07_mde_mini_generateur</module>
+    <module>08_checkout_tdd_final</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.4</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

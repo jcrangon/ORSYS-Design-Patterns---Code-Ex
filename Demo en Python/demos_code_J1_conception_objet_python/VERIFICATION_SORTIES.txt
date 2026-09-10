@@ -1,0 +1,23 @@
+=== DemoEncapsulation ===
+Commande{total=2000 cents, statut=BROUILLON}
+Commande{total=2000 cents, statut=EXPEDIEE}
+
+=== DemoOcp ===
+Standard -> 4700
+Express  -> 5400
+Relais   -> 4500
+Drone    -> 6000
+
+=== DemoLsp (échec attendu) ===
+Rectangle : OK
+AssertionError: Le client attendait 50 mais obtient 25
+
+=== DemoLspCorrige ===
+Rectangle : aire = 50
+Carre : aire = 25
+
+=== DemoCouplage ===
+[Stripe SDK simulé] charge 4200 cents
+Avec Stripe = True
+[Fake] payer 4200 cents -> False
+Avec Fake = False

@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+set -eu
+BASEDIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+MAVEN_VERSION="3.9.9"
+MAVEN_HOME_LOCAL="$BASEDIR/.mvn/apache-maven-$MAVEN_VERSION"
+ZIP="${TMPDIR:-/tmp}/apache-maven-$MAVEN_VERSION-bin.zip"
+URL="https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/$MAVEN_VERSION/apache-maven-$MAVEN_VERSION-bin.zip"
+if ! command -v java >/dev/null 2>&1; then echo "[ERREUR] Java absent du PATH." >&2; exit 1; fi
+if [ ! -x "$MAVEN_HOME_LOCAL/bin/mvn" ]; then
+  echo "[Wrapper] Premier lancement : telechargement de Maven $MAVEN_VERSION..."
+  mkdir -p "$BASEDIR/.mvn"
+  if command -v curl >/dev/null 2>&1; then curl -fsSL "$URL" -o "$ZIP"; elif command -v wget >/dev/null 2>&1; then wget -q "$URL" -O "$ZIP"; else echo "[ERREUR] curl ou wget requis." >&2; exit 1; fi
+  if command -v unzip >/dev/null 2>&1; then unzip -q -o "$ZIP" -d "$BASEDIR/.mvn"; else echo "[ERREUR] unzip requis." >&2; exit 1; fi
+  rm -f "$ZIP"
+fi
+exec "$MAVEN_HOME_LOCAL/bin/mvn" "$@"

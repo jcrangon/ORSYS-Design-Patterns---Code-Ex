@@ -1,0 +1,9 @@
+Customer.class
+OrderRepository.class
+PaymentPort.class
+StandardDiscounts.class
+Notifier.class
+Receipt.class
+CheckoutService.class
+Order.class
+DiscountPolicy.class

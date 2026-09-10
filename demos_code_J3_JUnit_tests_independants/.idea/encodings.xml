@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/01_RED/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/01_RED/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/02_GREEN/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/02_GREEN/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/03_REFACTOR/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/03_REFACTOR/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/04_limites_et_parametres/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/04_limites_et_parametres/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/05_doubles_stub_fake_spy_mock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/05_doubles_stub_fake_spy_mock/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/06_seams_temps_ids/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/06_seams_temps_ids/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/07_etat_vs_interaction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/07_etat_vs_interaction/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/08_legacy_characterization_refactor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/08_legacy_characterization_refactor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/09_mde_mini_generateur/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/09_mde_mini_generateur/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/10_checkout_tdd_final/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos_code_J3_JUnit_independants/10_checkout_tdd_final/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

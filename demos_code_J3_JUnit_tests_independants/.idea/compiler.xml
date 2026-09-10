@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo02-green" />
+        <module name="demo07-etat-interaction" />
+        <module name="demo04-limites" />
+        <module name="demo05-doubles" />
+        <module name="demo10-checkout" />
+        <module name="demo06-seams" />
+        <module name="demo09-mde" />
+        <module name="demo03-refactor" />
+        <module name="demo01-red" />
+        <module name="demo08-legacy" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

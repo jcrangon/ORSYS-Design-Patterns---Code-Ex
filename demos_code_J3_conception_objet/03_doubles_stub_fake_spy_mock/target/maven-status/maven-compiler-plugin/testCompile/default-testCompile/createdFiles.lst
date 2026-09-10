@@ -1,0 +1,5 @@
+CheckoutServiceTest$NotifierSpy.class
+CheckoutServiceTest$InMemoryOrderRepository.class
+CheckoutServiceTest$PaymentStub.class
+CheckoutServiceTest$AuditMock.class
+CheckoutServiceTest.class

@@ -1,0 +1,8 @@
+Validation du dossier Python J5
+
+- 9 démos exécutées avec run_all.sh : OK
+- Compilation syntaxique via python -m compileall : OK
+- Aucune dépendance Python externe requise
+- Les sorties pédagogiques et comportements du dossier Java d'origine sont conservés
+
+Remarque : la démo 08 est un micro-benchmark ; les temps affichés varient selon la machine.

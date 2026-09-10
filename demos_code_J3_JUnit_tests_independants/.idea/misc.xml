@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/01_RED/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/02_GREEN/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/03_REFACTOR/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/06_seams_temps_ids/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/10_checkout_tdd_final/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/07_etat_vs_interaction/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/09_mde_mini_generateur/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/04_limites_et_parametres/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/05_doubles_stub_fake_spy_mock/pom.xml" />
+        <option value="$PROJECT_DIR$/demos_code_J3_JUnit_independants/08_legacy_characterization_refactor/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="ms-25" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

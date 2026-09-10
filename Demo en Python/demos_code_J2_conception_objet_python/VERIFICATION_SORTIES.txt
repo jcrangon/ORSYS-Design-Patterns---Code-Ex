@@ -1,0 +1,42 @@
+=== J2 / 01 DIP ===
+Paiement accepté : stripe_tx_4250_tok_
+Paiement accepté : stripe_tx_4250_tok_
+Paiement accepté : fake-001
+=== J2 / 02 Injection ===
+=== Service Locator ===
+alice-1789012018206
+
+=== Injection constructeur ===
+alice-1700000000000
+Même entrée, même sortie : alice-1700000000000
+=== J2 / 03 ISP ===
+payment:P42
+Contrat mensonger : refund() n'est pas supporté
+UI -> payment:P42
+Avant remboursement : payment:P42
+refund P42
+=== J2 / 04 GRASP ===
+Refund 12900 cents pour O-42
+Email : commande O-42 annulée
+Statut final : CANCELLED
+=== J2 / 05 Packages ===
+Créée : O-892437092
+=== J2 / 06 Cycle avant ===
+orders: cancel O-42
+billing: refund O-42
+orders: refunded O-42
+=== J2 / 06 Cycle après ===
+orders: cancel O-42
+billing: refund O-42
+orders: refunded O-42
+=== J2 / 07 Stabilité ===
+package            Ca   Ce        I  lecture
+domain              8    1     0.11  stable
+application         4    4     0.50  intermédiaire
+stripe-adapter      0    6     1.00  instable
+shared             11    9     0.45  intermédiaire
+=== J2 / 08 Règles architecture ===
+Architecture valide ✓
+Architecture refusée ✗ : Règle violée : domain ne doit pas dépendre de stripe
+Cycle refusé ✗ : Cycle détecté autour de orders
+=== Toutes les démos J2 Python ont réussi ===
